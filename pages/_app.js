@@ -1,5 +1,4 @@
 import './pedr0x.css'
-import './pedr0x.css'
 import './components/MainContainer/main-container/.css'
 import './components/MainContainer/search-item/.css'
 import './components/Search/search-styles/.css'
