@@ -19,12 +19,12 @@ const Home = () => (
       <div className="grid">
         <a href="https://nextjs.org/docs" className="card">
           <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p>Find in-depth asdasdasdasdasd about Next.js features and API.</p>
         </a>
 
         <a href="https://nextjs.org/learn" className="card">
           <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <p>Learn asdasdas Next.js in an interactive course with quizzes!</p>
         </a>
 
         <a

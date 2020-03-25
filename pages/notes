@@ -1,0 +1,43 @@
+var getRecipes = async () => {
+			if (this.state.alcoholFree == true){
+			isAlcoholFree ="&health=alcohol-free";
+				console.log("is alcoholfree")
+		}
+		const response = await fetch ( `https://api.edamam.com/search?q=${query}&app_id=${appID}&app_key=${appKey}${isAlcoholFree}`);
+		const data = await response.json()
+		//console.log(data.hits)
+		//var a = data.hits[0].recipe;
+		//console.log(a)
+		
+		this.setState({recipes: data.hits})
+		
+		console.log(this.state.recipes[0])
+}
+
+	
+	getRecipes();
+	
+	apiRequest(query = "salmon", howManyCalories = "", isAlcoholFree = "", isVegetarian = "", isLowFat = "", isGlutenFree = "", isHighProtein = "", isBalanced = "") {
+	
+	const appID = "8bc00f3b";
+	const appKey = "b1d9d15dadbddc109d83b189b71e533f";
+	
+	var q = `https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q=${query}&app_id=${appID}&app_key=${appKey}${howManyCalories}${isAlcoholFree}${isVegetarian}${isLowFat}${isGlutenFree}${isHighProtein}${isBalanced}`;
+	
+		const xhr = new XMLHttpRequest();
+			xhr.open("GET", q);
+			
+			xhr.responseType = "json";
+			
+			xhr.onload =  () => {
+				console.log(32);
+				var result = xhr.response.hits;
+	this.setState({
+		recipes: result
+	})
+
+			};
+				xhr.send();
+
+		
+		}

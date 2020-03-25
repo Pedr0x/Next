@@ -1,0 +1,53 @@
+
+.card-list-item-container{
+	display: flex;
+
+justify-content: space-evenly;
+
+text-align: center;
+
+align-items: center;
+}
+.card-list-item {
+	display: inline;
+	padding: 1% 1.5%;
+	margin: 1%;
+	font-size: 12px;
+}
+
+.card-list-item_health {
+color: white;
+	background: #00c853;
+}
+
+.card-list-item_caution {
+background: #ffeb3b;
+color: black;
+
+}
+
+.card-list-item-total-nutrients-container{
+	display: grid;
+font-size: 14px;
+	align-items: center;
+grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+}
+
+.card-list-item-total-nutrients-container > li{
+	padding: 2%;
+}
+
+.MuiButtonBase-root > span{
+	pointer-events: none;
+	/* this is extrmely hacky fix later*/
+}
+
+.favorite-recipes{
+	width: 100vh;
+	height: 100vh;
+	background: #f8f8f8;
+}
+
+.card-list-item-subtitle{
+padding: 3% 0;
+}
