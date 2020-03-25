@@ -1,6 +1,6 @@
 import React from "react";
 //styles
-import  "./pedrox.css"
+//import  "./pedrox.css"
 
 
 //Redux stuff
@@ -14,7 +14,7 @@ import {useSelector,useDispatch} from "react-redux"
 
 
 	//REDUCER
-const store = createStore(
+/*const store = createStore(
 	allReducers,
 window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
@@ -22,6 +22,7 @@ window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
 store.subscribe(() => console.log(store.getState()))
 //REDUX END
+*/
 
 
 
@@ -74,21 +75,15 @@ return(
 var App = () => {
 	return(
 	
-		<Provider store={store}> 
+<div>		
 		<NavBar/> 
 				<MainSearch/>
 
-		<Router>
-		<Switch> 
-          <Route  exact path="/favorites" component={Favorites}>
-          </Route> 
-			</Switch>
-	</Router>
+		
 			
 		
 
-	</Provider>
-
+</div>
 	)
 	
 }

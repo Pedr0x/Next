@@ -14,7 +14,7 @@ import CheckBoxIcon from '@material-ui/icons/CheckBox';
 
 
 
-import "./search-styles.css"
+//import "./search-styles.css"
 
 class MainSearch extends React.Component {
 	  constructor(props) {

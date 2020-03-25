@@ -17,7 +17,7 @@ var _ = require('lodash');
 import IconButton from '@material-ui/core/IconButton';
 
 
-import "./search-item.css"
+//import "./search-item.css"
 const SearchItem = (props) => {
 	
 	  const [value, setValue] = React.useState(0);

@@ -2,7 +2,7 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid';
 import SearchItem from "./SearchItem";
 import CircularProgress from '@material-ui/core/CircularProgress';
-import "./main-container.css"
+//import "./main-container.css"
 var MainContainer = (props) => {
 
 	

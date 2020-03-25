@@ -21,16 +21,13 @@ let	navbarStyle ={
 	return(
 
 	<AppBar color="primary" position="static" style={navbarStyle}> 
-	    <Router>
 		<Typography variant="h5" align="left" fontWeight={600}> 
 		
-		<Link to="/">
-		RecipeFinder  </Link> </Typography> 
+		RecipeFinder   </Typography> 
 		
 		
 				
 
-			</Router>
 		</AppBar>
 
 	)
