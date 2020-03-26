@@ -93,7 +93,7 @@ value={value}
   >
    
     <Tab label="Ingredients" />
-    	 <Tab label="Recipe" />
+    	 <Tab label="Labels" />
 	 <Tab label="Nutrition" />
 
     </Tabs>
